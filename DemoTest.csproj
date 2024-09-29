@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataStructureDemo\**" />
+    <Compile Remove="GrammarTest\**" />
+    <Compile Remove="WpfAppDemo\**" />
+    <EmbeddedResource Remove="DataStructureDemo\**" />
+    <EmbeddedResource Remove="GrammarTest\**" />
+    <EmbeddedResource Remove="WpfAppDemo\**" />
+    <None Remove="DataStructureDemo\**" />
+    <None Remove="GrammarTest\**" />
+    <None Remove="WpfAppDemo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx" Version="5.1.2" />
+  </ItemGroup>
+</Project>
