@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignMode.Mode
+namespace DesignMode.Mode.SimpleFactory
 {
 
     public abstract class Product{
@@ -44,11 +44,11 @@ namespace DesignMode.Mode
             }
         }
 
-        public static void main(string[] args)
+        public void Create()
         {
             Product productA = Factory.CreateProduct("A");
             productA.Info();
-            
+
             Product productB = Factory.CreateProduct("B");
             productB.Info();
         }
