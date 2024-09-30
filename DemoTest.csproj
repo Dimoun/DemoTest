@@ -10,12 +10,15 @@
 
   <ItemGroup>
     <Compile Remove="DataStructureDemo\**" />
+    <Compile Remove="DesignMode\**" />
     <Compile Remove="GrammarTest\**" />
     <Compile Remove="WpfAppDemo\**" />
     <EmbeddedResource Remove="DataStructureDemo\**" />
+    <EmbeddedResource Remove="DesignMode\**" />
     <EmbeddedResource Remove="GrammarTest\**" />
     <EmbeddedResource Remove="WpfAppDemo\**" />
     <None Remove="DataStructureDemo\**" />
+    <None Remove="DesignMode\**" />
     <None Remove="GrammarTest\**" />
     <None Remove="WpfAppDemo\**" />
   </ItemGroup>

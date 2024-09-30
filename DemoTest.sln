@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrammarTest", "GrammarTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppDemo", "WpfAppDemo\WpfAppDemo.csproj", "{1298AAE7-C057-450D-B496-14F819CED31E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructureDemo", "DataStructureDemo\DataStructureDemo.csproj", "{1B096B93-2D94-4F5B-868C-3DC7D4FD0E1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructureDemo", "DataStructureDemo\DataStructureDemo.csproj", "{1B096B93-2D94-4F5B-868C-3DC7D4FD0E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignMode", "DesignMode\DesignMode.csproj", "{0FEBD774-E50F-4970-8CE5-D24B4833C80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{1B096B93-2D94-4F5B-868C-3DC7D4FD0E1B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B096B93-2D94-4F5B-868C-3DC7D4FD0E1B}.Release|x64.ActiveCfg = Release|Any CPU
 		{1B096B93-2D94-4F5B-868C-3DC7D4FD0E1B}.Release|x64.Build.0 = Release|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Debug|x64.Build.0 = Debug|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Release|x64.ActiveCfg = Release|Any CPU
+		{0FEBD774-E50F-4970-8CE5-D24B4833C80C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
