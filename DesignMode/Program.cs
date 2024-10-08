@@ -1,7 +1,4 @@
-﻿using DesignMode.Mode.AbstractFactory;
-using DesignMode.Mode.Builder;
-using DesignMode.Mode.FactoryMethod;
-using DesignMode.Mode.Prototype;
+﻿using DesignMode.Mode.StructuralDesignPattern;
 
 public class Program
 {
@@ -10,6 +7,7 @@ public class Program
         //new FactoryMethod().Create();
         //new AbstractFactory().Create();
         //new BuilderMode().Create();
-        new PrototypeMode().Create();
+        //new PrototypeMode().Create();
+        new Composite().Create();
     }
 }
