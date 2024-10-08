@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignMode.Mode.Builder
+namespace DesignMode.Mode.CreativeDesignPattern.Builder
 {
     public abstract class Builder
     {
@@ -13,8 +13,8 @@ namespace DesignMode.Mode.Builder
     public class ConcreateBuilder : Builder
     {
         Product product = null;
-        public override void BuildPart() 
-        {     
+        public override void BuildPart()
+        {
             product = new Product();
 
             product.AddPart("1");
@@ -24,8 +24,9 @@ namespace DesignMode.Mode.Builder
             product.AddPart("5");
         }
 
-        public Product GetResult() { 
-            
+        public Product GetResult()
+        {
+
             return product;
         }
     }

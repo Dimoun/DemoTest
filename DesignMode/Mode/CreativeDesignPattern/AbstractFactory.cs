@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignMode.Mode.AbstractFactory
+namespace DesignMode.Mode.CreativeDesignPattern.AbstractFactory
 {
     public interface IProduct
     {
@@ -56,7 +56,7 @@ namespace DesignMode.Mode.AbstractFactory
     }
 
     internal class AbstractFactory
-    {   
+    {
         public void Create()
         {
             IAbstractFactory factory = new ConcreteFactory1();

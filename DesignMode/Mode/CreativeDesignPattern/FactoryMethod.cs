@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignMode.Mode.FactoryMethod
+namespace DesignMode.Mode.CreativeDesignPattern.FactoryMethod
 {
     public interface IProduct
     {

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignMode.Mode.SimpleFactory
+namespace DesignMode.Mode.CreativeDesignPattern.SimpleFactory
 {
 
-    public abstract class Product{
+    public abstract class Product
+    {
 
         public abstract void Info();
     }
@@ -37,7 +38,8 @@ namespace DesignMode.Mode.SimpleFactory
                 {
                     case "A": product = new ProductA(); break;
                     case "B": product = new ProductB(); break;
-                    default: Console.WriteLine($"没有{type}类型的产品");
+                    default:
+                        Console.WriteLine($"没有{type}类型的产品");
                         return null;
                 }
                 return product;
