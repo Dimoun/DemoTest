@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace DesignMode.Mode.FactoryMethod
 {
-    public interface Product
+    public interface IProduct
     {
         public void info();
     }
-    public class ProductA : Product
+    public class ProductA : IProduct
     {
         public void info()
         {
             Console.WriteLine("产品A的信息：");
         }
     }
-    public class ProductB : Product
+    public class ProductB : IProduct
     {
         public void info()
         {
@@ -25,20 +25,20 @@ namespace DesignMode.Mode.FactoryMethod
         }
     }
 
-    public interface Factory
+    public interface IFactory
     {
-        public Product CreateProduct();
+        public IProduct CreateProduct();
     }
-    public class FactoryA : Factory
+    public class FactoryA : IFactory
     {
-        public Product CreateProduct()
+        public IProduct CreateProduct()
         {
             return new ProductA();
         }
     }
-    public class FactoryB : Factory
+    public class FactoryB : IFactory
     {
-        public Product CreateProduct()
+        public IProduct CreateProduct()
         {
             return new ProductB();
         }
@@ -47,12 +47,12 @@ namespace DesignMode.Mode.FactoryMethod
     {
         public void Create()
         {
-            Factory factoryA = new FactoryA();
-            Product productA = factoryA.CreateProduct();
+            IFactory factoryA = new FactoryA();
+            IProduct productA = factoryA.CreateProduct();
             productA.info();
 
-            Factory factoryB = new FactoryB();
-            Product productB = factoryB.CreateProduct();
+            IFactory factoryB = new FactoryB();
+            IProduct productB = factoryB.CreateProduct();
             productB.info();
         }
     }
