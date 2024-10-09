@@ -1,4 +1,5 @@
-﻿using DesignMode.Mode.StructuralDesignPattern;
+﻿using DesignMode.Mode.CreativeDesignPattern.Singleton;
+using DesignMode.Mode.StructuralDesignPattern;
 
 public class Program
 {
@@ -8,6 +9,8 @@ public class Program
         //new AbstractFactory().Create();
         //new BuilderMode().Create();
         //new PrototypeMode().Create();
-        new Composite().Create();
+        //new Composite().Create();
+        //var instance = Singleton.Instance;
+        new DecoratorMode().Create();
     }
 }

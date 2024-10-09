@@ -10,10 +10,22 @@ namespace DesignMode.Mode.CreativeDesignPattern.Singleton
     {
         private static Singleton instance = null;
 
-        public static Singleton GetInstance()
+        private Singleton() { }
+        public static Singleton Instance
         {
-            instance = instance ?? (instance = new Singleton());
-            return instance;
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Singleton(); // 延迟初始化
+                }
+                return instance;
+            }
         }
+        //public static Singleton GetInstance()
+        //{
+        //    instance = instance ?? (instance = new Singleton());
+        //    return instance;
+        //}
     }
 }
