@@ -11,6 +11,7 @@ public class Program
         //new PrototypeMode().Create();
         //new Composite().Create();
         //var instance = Singleton.Instance;
-        new DecoratorMode().Create();
+        //new DecoratorMode().Create();
+        new FlyweightMode().Create();
     }
 }
