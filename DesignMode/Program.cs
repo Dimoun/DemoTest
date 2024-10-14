@@ -1,4 +1,5 @@
-﻿using DesignMode.Mode.CreativeDesignPattern.Singleton;
+﻿using DesignMode.Mode.BehavioralDesignPattern;
+using DesignMode.Mode.CreativeDesignPattern.Singleton;
 using DesignMode.Mode.StructuralDesignPattern;
 
 public class Program
@@ -12,6 +13,10 @@ public class Program
         //new Composite().Create();
         //var instance = Singleton.Instance;
         //new DecoratorMode().Create();
-        new FlyweightMode().Create();
+        //new FlyweightMode().Create();
+        //new ChainOfResponsibility().Create();
+        //new Interpreter().Create();
+        //new IteratorMode().Create();
+        new MediatorMode().Create();
     }
 }
