@@ -11,7 +11,8 @@ public class Program
 
     public static async Task Main(string[] args)
     {
-        TestTaskCompletionSource();
+        //TestTaskCompletionSource();
+        TestNull(new String("asas"));
     }
 
     public async Task TestAsyncManualResetEvent()
@@ -88,5 +89,15 @@ public class Program
         }
     }
 
+    public static void TestNull(String? str)
+    {
+        Console.WriteLine(str.Length);
+
+        if (str != null)
+        {
+            Console.WriteLine(str.Length); // Ok
+        }
+        Index index = 3;
+    }
 
 }

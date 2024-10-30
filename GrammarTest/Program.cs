@@ -12,7 +12,8 @@ class Program
         //BitTest();
         //SetLedCtrl(true, true);
         //new InterlockedDemo().InterlockedTest();
-        IteratorTest();
+        //IteratorTest();
+        LazyTest();
     }
     public void AttributeTest()
     {
@@ -94,6 +95,11 @@ class Program
         {
             Console.WriteLine("yield: "+ number);
         }
+    }
+
+    public static void LazyTest()
+    {
+        new LazyDemo().GetInstance();
     }
 }
 

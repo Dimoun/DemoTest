@@ -24,9 +24,9 @@ namespace WpfAppDemo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TabControlDemo tcd = new TabControlDemo();
-            tcd.Show();
-
+            //TabControlDemo tcd = new TabControlDemo();
+            //tcd.Show();
+            new GlobalKeyboard().Show();
         }
     }
 }
